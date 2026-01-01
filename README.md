@@ -1,13 +1,13 @@
 # OrangeHRM Cypress Automation Framework
 
-## 🎯 Overview
+## Overview
 Production-ready Cypress automation framework for testing the OrangeHRM demo website using JavaScript and Page Object Model design pattern.
 
 **Author:** Satyadipon Deb  
 **Target Application:** https://opensource-demo.orangehrmlive.com/  
 **Test Credentials:** Username: Admin, Password: admin123
 
-## 📁 Project Structure
+## Project Structure
 ```
 cypress/
 ├── e2e/
@@ -25,7 +25,7 @@ cypress/
 └── reports/                     # Mochawesome test reports
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Node.js (v16 or higher)
@@ -78,23 +78,23 @@ npm run cypress:run:spec "cypress/e2e/login/login.cy.js"
 
 ## 🧪 Test Scenarios
 
-### ✅ Positive Test Cases
+### Positive Test Cases
 - **Valid Login:** Successful login with correct credentials
 - **Dashboard Verification:** Verify successful navigation to dashboard
 - **UI Element Validation:** Verify all login page elements are present
 
-### ❌ Negative Test Cases
+### Negative Test Cases
 - **Invalid Password:** Login attempt with wrong password
 - **Invalid Username:** Login attempt with wrong username
 - **Invalid Credentials:** Both username and password incorrect
 
-### 🔍 Validation Test Cases
+### Validation Test Cases
 - **Empty Credentials:** Login attempt with empty fields
 - **Required Field Validation:** Verify required field messages
 - **Input Field Functionality:** Test input field behavior
 - **Password Masking:** Verify password field security
 
-### 🔒 Security Test Cases
+### Security Test Cases
 - **Credential Protection:** Verify credentials not exposed in network
 - **Special Characters:** Handle special characters in input
 - **Network Timeout:** Graceful handling of network delays
@@ -131,7 +131,7 @@ cy.verifyErrorMessage('message')    // Verify error messages
 - **Videos:** Full test execution recordings
 - **Logs:** Detailed test execution logs
 
-## 📊 Test Reporting
+## Test Reporting
 
 ### Generate Reports
 ```bash
@@ -144,13 +144,13 @@ npm run report:open
 ```
 
 ### Report Features
-- ✅ Test execution summary
-- 📊 Pass/fail statistics
-- 📷 Screenshots for failures
-- 🕒 Execution duration
-- 📝 Detailed test steps
+- Test execution summary
+- Pass/fail statistics
+- Screenshots for failures
+- Execution duration
+- Detailed test steps
 
-## ⚙️ Configuration
+## Configuration
 
 ### Cypress Configuration (cypress.config.js)
 - **Base URL:** https://opensource-demo.orangehrmlive.com/
@@ -171,7 +171,7 @@ e2e: {
 }
 ```
 
-## 🛠️ Best Practices Implemented
+## Best Practices Implemented
 
 ### Code Quality
 - ✅ No hard-coded waits (cy.wait without alias)
@@ -194,7 +194,7 @@ e2e: {
 - ✅ Clear documentation
 - ✅ Version control friendly
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 1. **Test Failures:** Check screenshot in `cypress/screenshots/`
@@ -212,7 +212,7 @@ npm run cypress:open
 # Then click on test file and open DevTools
 ```
 
-## 📈 Extending the Framework
+## Extending the Framework
 
 ### Adding New Page Objects
 1. Create new page class in `cypress/pages/`
@@ -229,14 +229,11 @@ npm run cypress:open
 2. Use consistent naming and documentation
 3. Include proper error handling
 
-## 🤝 Contributing
+## Contributing
 1. Follow existing code patterns
 2. Add proper documentation
 3. Include test cases for new features
 4. Maintain backward compatibility
-
-## 📄 License
-MIT License - Feel free to use and modify as needed.
 
 ---
 **Framework Version:** 1.0.0  
