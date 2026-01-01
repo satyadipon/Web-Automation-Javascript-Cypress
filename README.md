@@ -5,7 +5,6 @@ Production-ready Cypress automation framework for testing the OrangeHRM demo web
 
 **Author:** Satyadipon Deb  
 **Target Application:** https://opensource-demo.orangehrmlive.com/  
-**Test Credentials:** Username: Admin, Password: admin123
 
 ## Project Structure
 ```
@@ -43,7 +42,7 @@ cypress/
    npx cypress verify
    ```
 
-## ⚡ Test Execution
+## Test Execution
 
 ### Interactive Mode (Headed)
 ```bash
@@ -76,7 +75,7 @@ npm run cypress:run:spec "cypress/e2e/login/login.cy.js"
 | `npm run report:generate` | Generates HTML test report |
 | `npm run report:open` | Opens generated HTML report |
 
-## 🧪 Test Scenarios
+## Test Scenarios
 
 ### Positive Test Cases
 - **Valid Login:** Successful login with correct credentials
@@ -99,7 +98,7 @@ npm run cypress:run:spec "cypress/e2e/login/login.cy.js"
 - **Special Characters:** Handle special characters in input
 - **Network Timeout:** Graceful handling of network delays
 
-## 🏗️ Framework Features
+## Framework Features
 
 ### Page Object Model (POM)
 - **LoginPage.js:** Encapsulates all login page interactions
