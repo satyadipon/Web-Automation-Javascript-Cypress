@@ -1,0 +1,33 @@
+{
+  "name": "orangehrm-cypress-automation",
+  "version": "1.0.0",
+  "description": "Cypress automation framework for OrangeHRM demo website testing",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "cypress:run:headed": "cypress run --headed --browser chrome",
+    "cypress:run:spec": "cypress run --spec",
+    "test": "cypress run",
+    "test:headed": "cypress run --headed --browser chrome",
+    "test:headless": "cypress run --headless",
+    "report:generate": "npx mochawesome-merge cypress/reports/*.json > cypress/reports/merged-report.json && npx mochawesome-report-generator cypress/reports/merged-report.json --reportDir cypress/reports/html",
+    "report:open": "open cypress/reports/html/index.html"
+  },
+  "keywords": [
+    "cypress",
+    "automation",
+    "testing",
+    "orangehrm",
+    "javascript",
+    "e2e"
+  ],
+  "author": "Satyadipon Deb",
+  "devDependencies": {
+    "cypress": "^13.6.3",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0"
+  },
+  "dependencies": {}
+}
